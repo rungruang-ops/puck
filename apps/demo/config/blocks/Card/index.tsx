@@ -53,12 +53,16 @@ export const Card: ComponentConfig<CardProps> = {
     icon: "Feather",
     mode: "flat",
   },
-  render: ({ title, icon, description, mode }) => {
+  inline: true,
+  render: ({ title, icon, description, mode, puck }) => {
     return (
-      <div className={getClassName({ [mode]: mode })}>
-        <div className={getClassName("icon")}>{icon && icons[icon]}</div>
-        <div className={getClassName("title")}>{title}</div>
-        <div className={getClassName("description")}>{description}</div>
+      <div className={getClassName({ [mode]: mode })} ref={puck.dragRef}>
+        <div className={getClassName("inner")}>
+          <div className={getClassName("icon")}>{icon && icons[icon]}</div>
+
+          <div className={getClassName("title")}>{title}</div>
+          <div className={getClassName("description")}>{description}</div>
+        </div>
       </div>
     );
   },

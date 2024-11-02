@@ -1,7 +1,10 @@
 import { Config, Data } from "@/core";
+import { Button, ButtonProps } from "./blocks/Button";
 import { ButtonGroup, ButtonGroupProps } from "./blocks/ButtonGroup";
 import { Card, CardProps } from "./blocks/Card";
 import { Columns, ColumnsProps } from "./blocks/Columns";
+import { Grid, GridProps } from "./blocks/Grid";
+import { GridItem, GridItemProps } from "./blocks/GridItem";
 import { Hero, HeroProps } from "./blocks/Hero";
 import { Heading, HeadingProps } from "./blocks/Heading";
 import { Flex, FlexProps } from "./blocks/Flex";
@@ -15,9 +18,12 @@ import Root, { RootProps } from "./root";
 export type { RootProps } from "./root";
 
 export type Props = {
+  Button: ButtonProps;
   ButtonGroup: ButtonGroupProps;
   Card: CardProps;
   Columns: ColumnsProps;
+  Grid: GridProps;
+  GridItem: GridItemProps;
   Hero: HeroProps;
   Heading: HeadingProps;
   Flex: FlexProps;
@@ -45,20 +51,27 @@ export const conf: UserConfig = {
   },
   categories: {
     layout: {
-      components: ["Columns", "Flex", "VerticalSpace"],
+      components: ["Grid", "Flex", "VerticalSpace"],
     },
     typography: {
       components: ["Heading", "Text"],
     },
     interactive: {
       title: "Actions",
-      components: ["ButtonGroup"],
+      components: ["Button"],
+    },
+    other: {
+      title: "Other",
+      components: ["Card", "Hero", "Logos", "Stats"],
     },
   },
   components: {
+    Button,
     ButtonGroup,
     Card,
     Columns,
+    Grid,
+    GridItem,
     Hero,
     Heading,
     Flex,
