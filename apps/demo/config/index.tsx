@@ -11,7 +11,7 @@ import { Flex, FlexProps } from "./blocks/Flex";
 import { Logos, LogosProps } from "./blocks/Logos";
 import { Stats, StatsProps } from "./blocks/Stats";
 import { Text, TextProps } from "./blocks/Text";
-import { VerticalSpace, VerticalSpaceProps } from "./blocks/VerticalSpace";
+import { Space, SpaceProps } from "./blocks/Space";
 
 import Root, { RootProps } from "./root";
 
@@ -30,7 +30,7 @@ export type Props = {
   Logos: LogosProps;
   Stats: StatsProps;
   Text: TextProps;
-  VerticalSpace: VerticalSpaceProps;
+  Space: SpaceProps;
 };
 
 export type UserConfig = Config<
@@ -51,7 +51,7 @@ export const conf: UserConfig = {
   },
   categories: {
     layout: {
-      components: ["Grid", "Flex", "VerticalSpace"],
+      components: ["Grid", "Flex", "Space"],
     },
     typography: {
       components: ["Heading", "Text"],
@@ -78,7 +78,7 @@ export const conf: UserConfig = {
     Logos,
     Stats,
     Text,
-    VerticalSpace,
+    Space,
   },
 };
 
@@ -108,8 +108,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687298109536" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687298109536" },
       },
       {
         type: "Heading",
@@ -123,8 +123,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "8px", id: "VerticalSpace-1687284122744" },
+        type: "Space",
+        props: { size: "8px", id: "Space-1687284122744" },
       },
       {
         type: "Text",
@@ -138,8 +138,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "40px", id: "VerticalSpace-1687296179388" },
+        type: "Space",
+        props: { size: "40px", id: "Space-1687296179388" },
       },
       {
         type: "Columns",
@@ -150,12 +150,12 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687287070296" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687287070296" },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687298110602" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687298110602" },
       },
       {
         type: "Heading",
@@ -169,8 +169,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "16px", id: "VerticalSpace-1687284283005" },
+        type: "Space",
+        props: { size: "16px", id: "Space-1687284283005" },
       },
       {
         type: "Text",
@@ -185,8 +185,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687297618253" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687297618253" },
       },
       {
         type: "Stats",
@@ -201,8 +201,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "120px", id: "VerticalSpace-1687297589663" },
+        type: "Space",
+        props: { size: "120px", id: "Space-1687297589663" },
       },
       {
         type: "Heading",
@@ -216,8 +216,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "8px", id: "VerticalSpace-1687296602860" },
+        type: "Space",
+        props: { size: "8px", id: "Space-1687296602860" },
       },
       {
         type: "Text",
@@ -232,8 +232,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687299311382" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687299311382" },
       },
       {
         type: "Columns",
@@ -251,8 +251,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687299315421" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687299315421" },
       },
       {
         type: "Heading",
@@ -266,8 +266,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "16px", id: "VerticalSpace-1687299318902" },
+        type: "Space",
+        props: { size: "16px", id: "Space-1687299318902" },
       },
       {
         type: "Text",
@@ -281,8 +281,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "24px", id: "VerticalSpace-1687299335149" },
+        type: "Space",
+        props: { size: "24px", id: "Space-1687299335149" },
       },
       {
         type: "ButtonGroup",
@@ -300,8 +300,8 @@ export const initialData: Record<string, UserData> = {
         },
       },
       {
-        type: "VerticalSpace",
-        props: { size: "96px", id: "VerticalSpace-1687284290127" },
+        type: "Space",
+        props: { size: "96px", id: "Space-1687284290127" },
       },
     ],
     root: { props: { title: "Puck Example" } },
