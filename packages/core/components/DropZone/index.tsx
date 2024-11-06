@@ -227,7 +227,8 @@ function DropZoneEdit({
         hoveringOverArea,
         isEnabled,
         isAreaSelected,
-        hasChildren: contentWithPreview.length > 0,
+        hasChildren: content.length > 0,
+        hasChildrenOrPreview: contentWithPreview.length > 0,
       })}${className ? ` ${className}` : ""}`}
       ref={(node) => {
         ref.current = node;

@@ -220,6 +220,7 @@ export const DraggableComponent = ({
 
   const onClick = useCallback(
     (e: SyntheticEvent | Event) => {
+      e.preventDefault();
       e.stopPropagation();
       dispatch({
         type: "setUi",
@@ -267,6 +268,8 @@ export const DraggableComponent = ({
     const el = ref.current as HTMLElement;
 
     const _onMouseOver = (e: Event) => {
+      e.preventDefault();
+
       if (userIsDragging) {
         // User is dragging, and dragging this item
         if (thisIsDragging) {
