@@ -1,11 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "turbo --filter=!eslint-config-custom --filter=!tsup-config --filter=!tsconfig build",
+    "dev": "turbo dev --filter=demo",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
+    "reset": "pnpm --filter=@measured/** --filter=eslint-config-custom --filter=tsup-config --filter=tsconfig exec rm -rf node_modules && rm -rf node_modules pnpm-lock.yaml && pnpm i",
+    "reset-config": "pnpm --filter=tsup-config --filter=tsconfig exec rm -rf node_modules && pnpm i",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
